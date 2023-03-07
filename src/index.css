@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url('./images/bg-desktop.svg');
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100vh;
+
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 6.4rem 0;
+  margin-bottom: 1.6rem;
+}
+
+.header .logo {
+  width: 20rem;
+  height: auto;
+}
+
+.section-info {
+  margin-bottom: 2.7rem;
+}
+
+.grid {
+  display: grid;
+  gap: 6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 70fr 52fr;
+}
+
+.img-box img {
+  width: 100%;
+}
+
+.cta-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-top: 3.2rem;
+  padding-right: 0.5rem;
+}
+
+.cta-box .heading-primary {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: #FFFFFF;
+}
+
+.cta-box .heading-description {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #FFFFFF;
+}
+
+.btn {
+  display: inline-block;
+  align-self: flex-start;
+  text-decoration: none;
+
+  background: #FFFFFF;
+  box-shadow: 0.2rem 0.4rem 0.9rem 0.3rem rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  cursor: pointer;
+  padding: 1.6rem 6.4rem;
+
+  /* Text Style */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+
+  text-align: center;
+
+  color: #684BB1;
+}
+
+.btn:hover {
+  background-color: #E880E8;
+  color: #fff;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: right;
+}
+
+
+.social-link:link,
+.social-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all .3s;
+
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.social-link:hover,
+.social-link:active {
+  color: rgba(255, 82, 193, 1);
+  border: 2px solid rgba(255, 82, 193, 1);
+}
+
+/* Media */
+
+/*****************************/
+/* BELOW 384px (Phones) */
+/*****************************/
+
+@media (max-width: 24em) {
+
+  body {
+    background-image: url('./images/bg-mobile.svg');
+  }
+
+  .container {
+    max-width: 30rem;
+  }
+
+  .header {
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+  }
+
+  .header .logo {
+    width: 12rem;
+    height: auto;
+  }
+
+  .section-info {
+    margin-bottom: 2.4rem;
+  }
+
+  .grid {
+    display: grid;
+    row-gap: 6rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+  .cta-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+    padding: 0;
+  }
+
+  .cta-box .heading-primary {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  .cta-box .heading-description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .btn {
+    align-self: center;
+
+    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.269022);
+    border-radius: 20px;
+    padding: 1.1rem 7.5rem;
+
+    /* Text Style */
+
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .social-links {
+    gap: 1.05rem;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  .social-link:link,
+  .social-link:visited {
+
+    font-size: 1.2rem;
+
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+}
