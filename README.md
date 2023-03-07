@@ -24,7 +24,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./src/images/final-build-desktop.png)
-![](./src/images/final-build-mobile.png)
 
 ### Links
 
