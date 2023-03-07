@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://huddle-landing-page-with-single-introductory-section-ruby-xi.vercel.app/)
 
 ## My process
 
